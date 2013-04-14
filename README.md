@@ -1,10 +1,17 @@
 # barrelroll.js
 
-Remember when Google.com did a barrelroll when you searched for "barrelroll"? Add that same easter egg to your site by including barrelroll.js to it!
+Remember when Google.com did a barrelroll when you searched for "barrelroll"? Add that same easter egg to your site by including barrelroll.js on it!
 
 ## In action
 
-[Demo page.]()
+[Demo page.](http://svarden.se/demo/barrelroll)
+
+## Support
+
+* Chrome (tested)
+* Firefox (tested)
+* Opera
+* Internet Explorer 9+ (tested in IE10)
 
 ## License
 
