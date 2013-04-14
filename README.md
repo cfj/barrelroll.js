@@ -4,7 +4,7 @@ Remember when Google.com did a barrelroll when you searched for "barrelroll"? Ad
 
 ## In action
 
-[Demo page.](http://svarden.se/demo/barrelroll)
+[Demo page.](http://www.svarden.se/demo/barrelroll)
 
 ## Support
 

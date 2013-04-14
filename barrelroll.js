@@ -1,6 +1,6 @@
 /*!
  * barrelroll.js
- * http://svarden.se/demo/barrelroll
+ * http://www.svarden.se/demo/barrelroll
  * MIT licensed
  *
  * Copyright (C) 2013 Jonathan Svärdén, http://svarden.se
