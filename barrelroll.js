@@ -52,15 +52,9 @@
     // Create a style element and put the CSS in there before adding it to the head
     function injectCSS(css){
         var styleEl = document.createElement( 'style' );
-
+        
         styleEl.type = 'text/css';
-
-        if( styleEl.styleSheet ){
-            styleEl.styleSheet.cssText = css;
-        }else{
-            styleEl.appendChild( document.createTextNode( css ) );
-        }
-
+        styleEl.appendChild( document.createTextNode( css ) );
         document.getElementsByTagName( 'head' )[0].appendChild( styleEl );
     }
 
