@@ -1,6 +1,6 @@
 /*!
  * barrelroll.js
- * http://www.svarden.se/demo/barrelroll
+ * http://www.svarden.se/demo/barrelroll/
  * MIT licensed
  *
  * Copyright (C) 2013 Jonathan Svärdén, http://svarden.se
@@ -8,14 +8,14 @@
 ;(function(){
     'use strict';
 
-        // The sequence of keypresses that create the word "barrelroll"
-    var barrelroll = "66,65,82,82,69,76,82,79,76,76",
+        // The sequence of keypresses that create the word 'barrelroll'
+    var barrelroll = '66,65,82,82,69,76,82,79,76,76',
 
         // Vendor animation names
         animPrefixes = ['webkitAnimation', 'MozAnimation', 'OAnimation', 'MSAnimation', 'animation'],
 
         // The base, unprefixed keyframe rule
-        cssBase = "@keyframes barrelroll {100%{transform: rotateZ(360deg);}}";
+        cssBase = '@keyframes barrelroll {100%{transform: rotateZ(360deg);}}';
 
 
     // Returns the first supported property in the provided array
@@ -52,7 +52,7 @@
     // Create a style element and put the CSS in there before adding it to the head
     function injectCSS(css){
         var styleEl = document.createElement( 'style' );
-        
+
         styleEl.type = 'text/css';
         styleEl.appendChild( document.createTextNode( css ) );
         document.getElementsByTagName( 'head' )[0].appendChild( styleEl );
@@ -63,13 +63,13 @@
             body = document.body,
             animationPrefix = getSupportedProperty( animPrefixes ),
             animationName = animationPrefix + 'Name',
-            animationEnd = ( animationPrefix + "End" ).replace(/^ms/, "MS").replace( /^Webkit/, "webkit" ).replace( /^Moz.*/, "animationend" ).replace( /^animationEnd$/, "animationend" );
+            animationEnd = ( animationPrefix + 'End' ).replace(/^ms/, 'MS').replace( /^Webkit/, 'webkit' ).replace( /^Moz.*/, 'animationend' ).replace( /^animationEnd$/, 'animationend' );
 
         injectCSS( prefixKeyframes(getSupportedProperty( animPrefixes ), cssBase ) );
 
-        body.style[animationPrefix + 'Duration'] = "2s";
+        body.style[animationPrefix + 'Duration'] = '2s';
 
-        document.addEventListener( "keydown", function(event){
+        document.addEventListener( 'keydown', function(event){
             
             keys.push(event.keyCode);
 
